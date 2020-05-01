@@ -1,14 +1,13 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { Routes } from "../../routes";
-console.log("routes", Routes);
 const MenuItem = ({ title, imageUrl, size, linkUrl, match, history }) => {
   const router = useRouter();
+
   console.log(router);
   return (
     <div
       className={`${size} menu-item`}
-      onClick={() => Routes.pushRoute(`/${linkUrl}`)}
+      onClick={() => router.push(`/${linkUrl}`)}
     >
       <div
         className="background-image"
@@ -25,3 +24,6 @@ const MenuItem = ({ title, imageUrl, size, linkUrl, match, history }) => {
 };
 
 export default MenuItem;
+
+//      onClick={()=>routes.pushRoute(`/${linkUrl}`)} this is not gonna work..
+// it does not work or ONclick

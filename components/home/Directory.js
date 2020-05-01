@@ -1,5 +1,5 @@
 import React from "react";
-import MenuItem from "./menu-item";
+import MenuItem from "./MenuItem";
 import Routes from "../../routes";
 
 class Directory extends React.Component {

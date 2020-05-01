@@ -1,13 +1,13 @@
 import React from "react";
-import Directory from "../components/home/directory";
 import BaseLayout from "../components/layouts/BaseLayout";
+import SignIn from "../components/signIn-signUp-form/SignIn";
 
-const HomePage = () => {
+const LogIn = () => {
   return (
     <BaseLayout>
-      <Directory></Directory>
+      <SignIn />
     </BaseLayout>
   );
 };
 
-export default HomePage;
+export default LogIn;
